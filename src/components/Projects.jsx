@@ -32,6 +32,12 @@ const projects = [
     details:
       "The Blinglist is an online e-commerce web application designed for purchasing jewelry. Users can browse various types of jewelry and receive personalized recommendations based on our recommendation algorithm. The application is developed using the MERN stack (MongoDB, Express, React, NodeJS), ensuring a robust and efficient platform for both browsing and buying jewelry.",
   },
+  {
+    name: "Personal Portfolio",
+    githubLink: "https://github.com/DhairyaDoc/Dhairya-Doctor-Portfolio",
+    details:
+      "This portfolio project is a comprehensive showcase of my journey as a Software Developer. Developed using React and hosted on Heroku, this portfolio highlights my skills, education, projects, experience, and more. It offers a modern, responsive design with smooth animations for an engaging user experience. Explore my work, learn about my background, and connect with me through the contact section for further collaboration opportunities.",
+  },
 ];
 
 const Projects = () => {
