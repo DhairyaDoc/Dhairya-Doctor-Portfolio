@@ -1,0 +1,30 @@
+/* General Section Styling */
+.skills,
+.experience,
+.projects,
+.education {
+  border-bottom: 4px solid #4db5ff;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  color: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: #4db5ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

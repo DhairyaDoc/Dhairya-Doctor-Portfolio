@@ -1,0 +1,9 @@
+body.light-mode {
+  --bg-color: #f8f9fa;
+  --text-color: #1e1e2f;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e2f;
+  --text-color: #f8f9fa;
+}
