@@ -7,15 +7,26 @@ const experiences = [
     position: "IT Developer",
     company: "Canada Revenue Agency",
     location: "Toronto, Ontario, Canada",
-    details:
-      "Led a team of 5 developers, managing 6 projects and ensuring 100% on-time delivery with weekly progress reports. Developed 4 internal web applications using Apache Struts 2, Angular, and Java with MySQL and DB2 as backend database. Built scalable microservices with Spring Boot, RESTful APIs, and multiple databases to enhance scalability and performance. Optimized database API performance, cutting query execution time by 40% and reducing user wait time to under 5 seconds. Enhanced frontend performance by 30% with interactive and reusable Angular User Interfaces components. Integrated Jenkins pipeline into Struts2 application, automating SonarQube analysis and improving compliance metrics by 25%. Implemented application business logic using stored procedures to streamline data processing and enhance database efficiency",
+    details: [
+      "Led a team of 5 developers, managing 6 projects and ensuring 100% on-time delivery with weekly progress reports.",
+      "Developed 4 internal web applications using Apache Struts 2, Angular, and Java with MySQL and DB2 as backend database.",
+      "Built scalable microservices with Spring Boot, RESTful APIs, and multiple databases to enhance scalability and performance.",
+      "Optimized database API performance, cutting query execution time by 40% and reducing user wait time to under 5 seconds.",
+      "Enhanced frontend performance by 30% with interactive and reusable Angular User Interfaces components.",
+      "Integrated Jenkins pipeline into Struts2 application, automating SonarQube analysis and improving compliance metrics by 25%.",
+      "Implemented application business logic using stored procedures to streamline data processing and enhance database efficiency.",
+    ],
   },
   {
     position: "Software Development Engineer",
     company: "Ajmera Infotech",
     location: "Ahmedabad, Gujarat, India",
-    details:
-      "Developed RESTful APIs with C#, integrating React frontend and MySQL for efficient user interaction and data management. Led a team of 6 interns to design and develop .NET-based applications, ensuring adherence to industry best practices. Optimized storage of user images and files in AWS S3 for body scanning application, reduced storage costs by 50%. Improved CI/CD pipeline to deploy React frontend and C# backend on Microsoft Azure, increased deployment speed by 20%",
+    details: [
+      "Developed RESTful APIs with C#, integrating React frontend and MySQL for efficient user interaction and data management.",
+      "Led a team of 6 interns to design and develop .NET-based applications, ensuring adherence to industry best practices.",
+      "Optimized storage of user images and files in AWS S3 for body scanning application, reduced storage costs by 50%.",
+      "Improved CI/CD pipeline to deploy React frontend and C# backend on Microsoft Azure, increased deployment speed by 20%.",
+    ],
   },
 ];
 
@@ -62,7 +73,11 @@ const Experience = () => {
             </button>
             <h3>{selectedExperience.position}</h3>
             <h4>{selectedExperience.company}</h4>
-            <p>{selectedExperience.details}</p>
+            <ul>
+              {selectedExperience.details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+              ))}
+            </ul>
           </div>
         </div>
       )}

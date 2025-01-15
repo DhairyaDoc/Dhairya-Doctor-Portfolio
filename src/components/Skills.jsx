@@ -123,12 +123,14 @@ const Skills = () => {
         <h2 className="section-title">Skills</h2>
         <div className="skills-grid">
           {Object.keys(skills).map((category, index) => (
-            <div
-              key={index}
-              className="skill-box"
-              onClick={() => openModal(category)}
-            >
+            <div className="skill-box" key={index}>
               <h3>{category}</h3>
+              <button
+                className="view-details-btn"
+                onClick={() => openModal(category)}
+              >
+                View Details
+              </button>
             </div>
           ))}
         </div>
