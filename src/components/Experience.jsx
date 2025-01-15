@@ -7,6 +7,7 @@ const experiences = [
     position: "IT Developer",
     company: "Canada Revenue Agency",
     location: "Toronto, Ontario, Canada",
+    year: "2023 - Present",
     details: [
       "Led a team of 5 developers, managing 6 projects and ensuring 100% on-time delivery with weekly progress reports.",
       "Developed 4 internal web applications using Apache Struts 2, Angular, and Java with MySQL and DB2 as backend database.",
@@ -21,6 +22,7 @@ const experiences = [
     position: "Software Development Engineer",
     company: "Ajmera Infotech",
     location: "Ahmedabad, Gujarat, India",
+    year: "2020 - 2021",
     details: [
       "Developed RESTful APIs with C#, integrating React frontend and MySQL for efficient user interaction and data management.",
       "Led a team of 6 interns to design and develop .NET-based applications, ensuring adherence to industry best practices.",
@@ -53,6 +55,7 @@ const Experience = () => {
             <div key={index} className="experience-box">
               <h3>{experience.position}</h3>
               <h4>{experience.company}</h4>
+              <p>{experience.year}</p>
               <p>{experience.location}</p>
               <button
                 className="details-btn"
