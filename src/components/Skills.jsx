@@ -12,8 +12,11 @@ const skills = {
     { name: "HTML", icon: "🌐" },
     { name: "CSS", icon: "🎨" },
     { name: "SCSS", icon: "🎨" },
+    { name: "SASS", icon: "" },
     { name: "PHP", icon: "🐘" },
     { name: "C#", icon: "💻" },
+    { name: "C++", icon: "" },
+    { name: "C", icon: "" },
     { name: "ASP.NET", icon: "🌐" },
     { name: "GraphQL", icon: "🔍" },
     { name: "jQuery", icon: "💡" },
@@ -29,17 +32,29 @@ const skills = {
     { name: ".NET Core", icon: "💻" },
     { name: "Bootstrap", icon: "🅱️" },
     { name: "Mongoose", icon: "🐍" },
+    { name: "Log4J", icon: "" },
+    { name: "Hadoop", icon: "" },
   ],
   Databases: [
     { name: "MySQL", icon: "🐬" },
     { name: "PostgreSQL", icon: "🐘" },
     { name: "MS SQL (Microsoft SQL Server)", icon: "💽" },
     { name: "MongoDB", icon: "🍃" },
+    { name: "Amazon RDS", icon: "📦" },
+    { name: "Amazon Aurora", icon: "🔥" },
+    { name: "Amazon DynamoDB", icon: "⚡" },
+    { name: "Firestore", icon: "🔥" },
+    { name: "Cloudant", icon: "" },
   ],
   Tools: [
+    { name: "Visual Studio Code", icon: "🛠️" },
+    { name: "Visual Studio", icon: "🖥️" },
+    { name: "Eclipse", icon: "🌒" },
     { name: "IntelliJ IDEA", icon: "🛠️" },
     { name: "Figma", icon: "🎨" },
     { name: "Pandas", icon: "🐼" },
+    { name: "Jupyter", icon: "" },
+    { name: "Tableau", icon: "" },
     { name: "Git", icon: "🔧" },
     { name: "GitHub", icon: "🐙" },
     { name: "JIRA", icon: "📋" },
@@ -51,7 +66,13 @@ const skills = {
     { name: "Jest", icon: "🧪" },
     { name: "Teamcity", icon: "🏙️" },
     { name: "Jenkins", icon: "🤖" },
+    { name: "SonarQube", icon: "" },
+    { name: "CodeBuild", icon: "" },
+    { name: "CodeDeploy", icon: "" },
+    { name: "CodePipeline", icon: "" },
     { name: "AWS CLI", icon: "☁️" },
+    { name: "Apache Spark", icon: "" },
+    { name: "MapReduce", icon: "" },
     { name: "Microsoft Office 365", icon: "💼" },
     { name: "Postman", icon: "📬" },
     { name: "Swagger", icon: "📜" },
@@ -68,10 +89,17 @@ const skills = {
     { name: "Agile SCRUM Methodology", icon: "🔄" },
     { name: "Data Structure and Algorithms", icon: "📊" },
     { name: "OOP (Object Oriented Programming)", icon: "🔍" },
+    { name: "RESTful API", icon: "🔍" },
+    { name: "Microservices", icon: "🔍" },
+    { name: "CI/CD", icon: "🔧" },
+    { name: "Unit Testing", icon: "🧪" },
     { name: "Test Driven Development", icon: "✅" },
     { name: "Software Development Life Cycle", icon: "🔄" },
     { name: "Database Schema Design", icon: "🗂️" },
     { name: "Relational Database System", icon: "🗄️" },
+    { name: "NoSQL Database System", icon: "" },
+    { name: "TCP/IP", icon: "" },
+    { name: "DevOps", icon: "" },
   ],
 };
 
@@ -115,7 +143,7 @@ const Skills = () => {
                 {skills[selectedCategory].map((skill, index) => (
                   <div key={index} className="skill-item">
                     {skill.name}
-                    {skill.icon}
+                    {/* {skill.icon} */}
                   </div>
                 ))}
               </div>
