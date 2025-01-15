@@ -1,10 +1,6 @@
 .projects {
   text-align: center;
-  background: linear-gradient(
-    135deg,
-    #1e1e2f,
-    #2d2d44
-  );
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
   color: #f8f9fa;
   padding: 60px 20px;
 }
@@ -16,7 +12,7 @@
 }
 
 .project-box {
-  background: #29293d;
+  background: #343a40;
   padding: 25px;
   border-radius: 12px;
   color: #f8f9fa;
@@ -120,9 +116,6 @@
 
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: repeat(
-      1,
-      1fr
-    );
+    grid-template-columns: repeat(1, 1fr);
   }
 }
