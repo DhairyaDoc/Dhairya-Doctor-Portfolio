@@ -15,7 +15,7 @@ const education = [
     degree: "Bachelor of Information and Communication Technology",
     institution: "Gujarat Technological University",
     location: "Ahmedabad, Gujarat, India",
-    year: "2017 - 2021",
+    year: "2016 - 2021",
     details:
       "Focused on computer science fundamentals, programming, and web development.",
   },
